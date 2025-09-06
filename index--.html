@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Hayatta Hayatta Kalma Kılavuzu — Retro Mizah</title>
+  <style>
+    :root{--bg:#f0f2f5;--ink:#222;--link:#0033cc;--visited:#660099;--frame:#c9d2df;--nav:#e6ecf3;--accent:#ffcc00}
+    html,body{margin:0;padding:0;background:var(--bg) url('https://www.transparenttextures.com/patterns/subtle-dots.png');color:var(--ink);font:15px/1.5 Verdana,Tahoma,sans-serif}
+    a{color:var(--link);text-decoration:underline;cursor:pointer}
+    a:visited{color:var(--visited)}
+    .wrap{max-width:960px;margin:12px auto;padding:6px;border:3px ridge var(--frame);background:#fff;box-shadow:0 0 0 4px #fff,0 0 0 7px var(--frame)}
+    header{border-bottom:3px ridge var(--frame);padding:10px;background:linear-gradient(#fff,#f7fbff);display:flex;align-items:center;gap:10px;flex-wrap:nowrap}
+    .badge{background:var(--accent);border:3px outset #d4a800;padding:6px 10px;font-weight:bold;white-space:nowrap}
+    h1{font-size:20px;margin:0;color:#003366;text-shadow:1px 1px 0 #fff}
+    nav{display:flex;gap:6px;flex-wrap:wrap;padding:8px;background:var(--nav);border-bottom:3px groove var(--frame)}
+    .btn{padding:6px 10px;border:2px outset #b9c7d8;background:#fff;cursor:pointer;font-weight:bold;white-space:nowrap}
+    .btn:active{border-style:inset}
+    .grid{display:grid;grid-template-columns:220px 1fr;gap:12px;padding:12px}
+    aside{border:3px ridge var(--frame);padding:8px;background:#f9fbfe}
+    main{border:3px ridge var(--frame);padding:16px;min-height:420px;background:#fff}
+    .section{display:none}
+    .section.active{display:block}
+    .blink{animation:blink 1.2s steps(2,end) infinite;color:#c00;font-weight:bold}
+    @keyframes blink{50%{opacity:0}}
+    footer{padding:10px;border-top:3px ridge var(--frame);background:#f7fbff;font-size:12px;color:#555;text-align:center}
+    marquee{color:#003366;background:var(--accent);padding:4px;font-weight:bold;border-top:2px solid #d4a800;border-bottom:2px solid #d4a800}
+    .links{margin:0;padding:0;list-style:none}
+    .links li{border-bottom:1px dashed #b9c7d8;padding:6px 0}
+    .links a{font-weight:bold;text-decoration:none;color:var(--link)}
+    .detail{display:none;margin:6px 0 12px 0;padding:8px;border:2px inset #c9d2df;background:#f9fbfe}
+    /* Mobil */
+    @media(max-width:820px){
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:row;align-items:center}
+      .badge{font-size:14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">★ RETRO ★</div>
+      <h1>Modern Hayatta Hayatta Kalma Kılavuzu Yeni Commit Deneme </h1>
+    </header>
+
+    <marquee behavior="scroll" direction="left">✨ Hoş geldiniz! Ne kadar da yalnız değilmişiz değil mi! ✨</marquee>
+
+    <nav>
+      <a href="#kilavuz" class="btn">Kılavuz</a>
+      <a href="#modern-analiz" class="btn">Ozanlarımız</a>
+      <a href="#kendilerini-ne" class="btn">Kendilerini Ne Zannediyorlar?</a>
+      <a href="#meslek" class="btn">Mesleki Deformasyonlar</a>
+      <a href="#hakkinda" class="btn">Hakkında</a>
+    </nav>
+
+    <div class="grid">
+      <aside>
+        <b>📌 Çok Yakında</b>
+        <div class="blink">YENİ!</div>
+        <ul>
+          <li>Ozanlarımız</li>
+          <li>Kendilerini Ne Zannediyorlar?</li>
+          <li>Mesleki Deformasyonlar</li>
+        </ul>
+        <p style="margin:8px 0">Hit sayacı: <span id="counter" class="counter" style="font-family:monospace;background:#000;color:#0f0;padding:2px 6px;display:inline-block">000000</span></p>
+        <p><img src="https://www.animatedimages.org/data/media/56/animated-under-construction-image-0022.gif" width="100" alt="retro under construction"></p>
+      </aside>
+
+      <main>
+        <section id="kilavuz" class="section active">
+          <h2>🧭 Kılavuz: Hayatın Bazı Dertlerini Niş Çözümlemeler</h2>
+          <div class=\"detail\" style=\"display:block;background:#fff;border:none;padding:0;margin:10px 0\">
+<h3>📜 Önsöz</h3>
+<p>Sevgili Okur, bu kılavuz tam da “vay arkadaş hakikaten he, benim de başıma gelmişti” dedirten dertlere mizahi reçeteler sunar. Modern dünya hepimizi kutu gibi evlerde, kalabalık caddelerde kulaklıkla yalnız bıraktı. Ama işte bu kılavuz, “ulan bunu da çözdük ya” dedirten çözümlerle yalnız olmadığımızı hatırlatacak. Dertlerimizi tek başımıza değil, topluca tiye alacağız. Çünkü mizah, modern çağın en güçlü hayatta kalma yöntemidir.</p>
+</div>
+          <nav>
+              <a href="#dertler" class="btn">Dertlerimize Gidelim</a>
+          </nav>
+          
+        
+        </section>
+        <section id="dertler" class="section active">
+          <h3>📜 Sizin için derlediklerimiz</h3>
+            <ul class="links">
+            <li><a onclick="toggleDetail('d-kahve')">Sıtorime layk atıyor ama mesaj atmıyor: Cesaretin var mı aşka</a>
+              <div id="d-kahve" class="detail">Bu çok sık yaşanan arkadaş ortamlarında çözmeye çalıştığımız bir problem. Sevgi eylem gerektirir diyerek layk attıktan sonra ona bir emoji gönderin</div>
+            </li>
+            <li><a onclick="toggleDetail('d-toplanti')">Ya az önce şaka akımı vardı yine kimi tutukluyoruz: Ayağıma prangalar taktılar!</a>
+              <div id="d-toplanti" class="detail">Gülerken ağlamak ağlarken gülmek. Çok doğaldır fakat bunun çok hızlı gerçekleşmesi günümüzde psikoljik tedavi gerektirir. Gerek yok burası tivitır</div>
+            </li>
+            <li><a onclick="toggleDetail('d-internet')">Her kesimin derdi eski gönderi favladım : Mazi kalbimde bir yaradır</a>
+              <div id="d-internet" class="detail">Hiç dert etme. En eskiden başlayarak en yeni gönderilere öne çıkan sıtorilere kadar hepsini laykla. Daha sonrasında mesaj at: Sen de beni layklar mısın :)</div>
+            </li>
+            <li><a onclick="toggleDetail('d-diyet')">Bir şeyi popüler olmadan biliyordum şimdi herkes seviyor diye sevmiyorum: Unutulmuş birer birer eski dostlar eski dostlar</a>
+              <div id="d-diyet" class="detail">Adeta yuvanda kucağında büyüttüğün bir bebeğin ilk adımları gibi. Şimdi bu aşkı tüketmek gerek. Tüm kanallardan abartıldığını aslında o kadar da iyi bir iş olmadığını anlat</div>
+            </li>
+            <li><a onclick="toggleDetail('d-goruldu')">Mesaj Görüldü</a>
+              <div id="d-goruldu" class="detail">Cevap yazmaya üşeniyorsan emoji spamı at; karşı taraf anlam yükleyip seni düşünmekle meşgul olur.</div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="modern-analiz" class="section">
+          <h2>📊 Ozanlarımız Ne Dediler</h2>
+          <p>Yerel, mahalli ya da ülkemize hatta ve hatta dünyaca ünlü ozanlarımız ne dediler, işte sizin için analizlerimiz</p>
+        </section>
+
+        <section id="kendilerini-ne" class="section">
+          <h2>🧩 Kendilerini Ne Zannediyorlar?</h2>
+          <p>Bağıra çağıra haykıramasak da hepimizin ulan bunlar da kendilerini ne zannediyorlar dediklerimiz</p>
+        </section>
+
+        <section id="meslek" class="section">
+          <h2>💼 Meslek Deformasyonları</h2>
+          <p>Sevdiğim iş artık bir uzvum</p>
+        </section>
+
+        <section id="hakkinda" class="section">
+          <h2>ℹ️ Hakkında</h2>
+          <p>Bu site mizah odaklı, <span class="blink">retro</span> bir tasarımla modern hayatın absürtlüklerine eğlenceli çözümler sunar. Web 1.0 hissi için marquee, gif ve klasik çerçeve stilleri kullanılır.</p>
+          <h3>💬 Misafir Defteri</h3>
+          <form id="guestForm" style="border:2px outset #b9c7d8;padding:8px;background:#f7fbff">
+            <label>İsim: <input type="text" id="guestName" required maxlength="40"></label>
+            <br/>
+            <label>Mesaj: <input type="text" id="guestMsg" required maxlength="200" style="width:90%"></label>
+            <br/>
+            <button type="submit" class="btn">Gönder</button>
+          </form>
+          <ul id="guestList" style="list-style: none; padding-left: 0; margin-top:10px"></ul>
+          <p style="font-size:12px;color:#666">Not: Bu misafir defteri şu an tarayıcında saklanır (yerel). İstersen ileride GitHub tabanlı yorum sistemi (Giscus/Utterances) ile herkese açık hale getiririz.</p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      © <span id="y"></span> Retro Mizah | Çok Yakında Daha Fazla İçerik!
+    </footer>
+  </div>
+
+  <script>
+    function showSection(hash){
+      const id = (hash || location.hash || '#kilavuz');
+      document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+      const el=document.querySelector(id);
+      if(el){el.classList.add('active');}
+    }
+    window.addEventListener('hashchange',()=>showSection(location.hash));
+    showSection();
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Basit ziyaretçi sayacı
+    (function(){
+      try{
+        const key = 'hits_'+location.host;
+        const n = parseInt(localStorage.getItem(key)||'0',10)+1;
+        localStorage.setItem(key,String(n));
+        const c = document.getElementById('counter');
+        if(c){ c.textContent = (''+n).padStart(6,'0'); }
+      }catch(e){}
+    })();
+
+    // Misafir Defteri
+    (function(){
+      const listEl = document.getElementById('guestList');
+      const form = document.getElementById('guestForm');
+      const key = 'guestbook_'+location.host;
+      const esc = s => s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
+      function load(){
+        const arr = JSON.parse(localStorage.getItem(key)||'[]');
+        listEl.innerHTML = '';
+        arr.forEach(item => {
+          const li = document.createElement('li');
+          li.style.border = '2px inset #c9d2df';
+          li.style.background = '#fff';
+          li.style.padding = '6px';
+          li.style.margin = '6px 0';
+          li.innerHTML = '<b>'+esc(item.name)+'</b>: '+esc(item.msg)+' <span style="color:#999;font-size:12px">('+new Date(item.ts).toLocaleString()+')</span>'+
+                         ' <button data-id="'+item.id+'" class="btn" style="padding:2px 6px">Sil</button>';
+          listEl.appendChild(li);
+        });
+      }
+      function save(arr){ localStorage.setItem(key, JSON.stringify(arr)); }
+      form.addEventListener('submit', e=>{
+        e.preventDefault();
+        const name = document.getElementById('guestName').value.trim();
+        const msg  = document.getElementById('guestMsg').value.trim();
+        if(!name||!msg) return;
+        const arr = JSON.parse(localStorage.getItem(key)||'[]');
+        arr.unshift({id:Date.now()+Math.random().toString(16).slice(2), name, msg, ts:Date.now()});
+        save(arr); load(); form.reset();
+      });
+      listEl.addEventListener('click', e=>{
+        const id = e.target && e.target.getAttribute('data-id');
+        if(!id) return;
+        const arr = JSON.parse(localStorage.getItem(key)||'[]').filter(x=>x.id!==id);
+        save(arr); load();
+      });
+      load();
+    })();
+
+    // Dert detaylarını aç/kapat
+    function toggleDetail(id){
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.style.display = (el.style.display==='block')? 'none':'block';
+    }
+  </script>
+</body>
+</html>

@@ -41,16 +41,16 @@
   <div class="wrap">
     <header>
       <div class="badge">★ RETRO ★</div>
-      <h1>Modern Hayatta Hayatta Kalma Kılavuzu Yeni Commit Deneme </h1>
+      <h1>Modern Hayatta Hayatta Kalma Kılavuzu</h1>
     </header>
 
-    <marquee behavior="scroll" direction="left">✨ Hoş geldiniz! Ne kadar da yalnız değilmişiz değil mi! ✨</marquee>
+    <marquee behavior="scroll" direction="left">✨ Hoş geldiniz! Retro hissi burada. Ziyaretçi sayacı ve misafir defteri eklendi! ✨</marquee>
 
     <nav>
       <a href="#kilavuz" class="btn">Kılavuz</a>
-      <a href="#modern-analiz" class="btn">Ozanlarımız</a>
+      <a href="#modern-analiz" class="btn">Modern Çağ Analizleri</a>
       <a href="#kendilerini-ne" class="btn">Kendilerini Ne Zannediyorlar?</a>
-      <a href="#meslek" class="btn">Mesleki Deformasyonlar</a>
+      <a href="#meslek" class="btn">Meslek Deformasyonları</a>
       <a href="#hakkinda" class="btn">Hakkında</a>
     </nav>
 
@@ -59,67 +59,58 @@
         <b>📌 Çok Yakında</b>
         <div class="blink">YENİ!</div>
         <ul>
-          <li>Ozanlarımız</li>
+          <li>Modern Çağ Analizleri</li>
           <li>Kendilerini Ne Zannediyorlar?</li>
-          <li>Mesleki Deformasyonlar</li>
+          <li>Meslek Deformasyonları</li>
         </ul>
         <p style="margin:8px 0">Hit sayacı: <span id="counter" class="counter" style="font-family:monospace;background:#000;color:#0f0;padding:2px 6px;display:inline-block">000000</span></p>
         <p><img src="https://www.animatedimages.org/data/media/56/animated-under-construction-image-0022.gif" width="100" alt="retro under construction"></p>
       </aside>
 
       <main>
-        <section id="kilavuz" class="section active">
-          <h2>🧭 Kılavuz: Hayatın Bazı Dertlerini Niş Çözümlemeler</h2>
-          <div class=\"detail\" style=\"display:block;background:#fff;border:none;padding:0;margin:10px 0\">
-<h3>📜 Önsöz</h3>
-<p>Sevgili Okur, bu kılavuz tam da “vay arkadaş hakikaten he, benim de başıma gelmişti” dedirten dertlere mizahi reçeteler sunar. Modern dünya hepimizi kutu gibi evlerde, kalabalık caddelerde kulaklıkla yalnız bıraktı. Ama işte bu kılavuz, “ulan bunu da çözdük ya” dedirten çözümlerle yalnız olmadığımızı hatırlatacak. Dertlerimizi tek başımıza değil, topluca tiye alacağız. Çünkü mizah, modern çağın en güçlü hayatta kalma yöntemidir.</p>
-</div>
-          <nav>
-              <a href="#dertler" class="btn">Dertlerimize Gidelim</a>
-          </nav>
-          
-        
-        </section>
-        <section id="dertler" class="section active">
-          <h3>📜 Sizin için derlediklerimiz</h3>
-            <ul class="links">
-            <li><a onclick="toggleDetail('d-kahve')">Sıtorime layk atıyor ama mesaj atmıyor: Cesaretin var mı aşka</a>
-              <div id="d-kahve" class="detail">Bu çok sık yaşanan arkadaş ortamlarında çözmeye çalıştığımız bir problem. Sevgi eylem gerektirir diyerek layk attıktan sonra ona bir emoji gönderin</div>
-            </li>
-            <li><a onclick="toggleDetail('d-toplanti')">Ya az önce şaka akımı vardı yine kimi tutukluyoruz: Ayağıma prangalar taktılar!</a>
-              <div id="d-toplanti" class="detail">Gülerken ağlamak ağlarken gülmek. Çok doğaldır fakat bunun çok hızlı gerçekleşmesi günümüzde psikoljik tedavi gerektirir. Gerek yok burası tivitır</div>
-            </li>
-            <li><a onclick="toggleDetail('d-internet')">Her kesimin derdi eski gönderi favladım : Mazi kalbimde bir yaradır</a>
-              <div id="d-internet" class="detail">Hiç dert etme. En eskiden başlayarak en yeni gönderilere öne çıkan sıtorilere kadar hepsini laykla. Daha sonrasında mesaj at: Sen de beni layklar mısın :)</div>
-            </li>
-            <li><a onclick="toggleDetail('d-diyet')">Bir şeyi popüler olmadan biliyordum şimdi herkes seviyor diye sevmiyorum: Unutulmuş birer birer eski dostlar eski dostlar</a>
-              <div id="d-diyet" class="detail">Adeta yuvanda kucağında büyüttüğün bir bebeğin ilk adımları gibi. Şimdi bu aşkı tüketmek gerek. Tüm kanallardan abartıldığını aslında o kadar da iyi bir iş olmadığını anlat</div>
-            </li>
-            <li><a onclick="toggleDetail('d-goruldu')">Mesaj Görüldü</a>
-              <div id="d-goruldu" class="detail">Cevap yazmaya üşeniyorsan emoji spamı at; karşı taraf anlam yükleyip seni düşünmekle meşgul olur.</div>
-            </li>
+        <section id=\"kilavuz\" class=\"section active\">
+          <h2>🧭 Kılavuz: Hayatta Kalma İçin Mizahi Çözümler</h2>
+          <p><b>Dertler listesi:</b> Her maddeye tıkla, detaylar açılsın.</p>
+          <ul class=\"links\">
+            <li><a onclick=\"toggleDetail('d-kahve')\">Kahve Bağımlılığı</a></li>
+            <li><a onclick=\"toggleDetail('d-toplanti')\">Toplantı Maratonları</a></li>
+            <li><a onclick=\"toggleDetail('d-internet')\">İnternetsiz Kalma</a></li>
+            <li><a onclick=\"toggleDetail('d-diyet')\">Diyet Başarısızlıkları</a></li>
+            <li><a onclick=\"toggleDetail('d-goruldu')\">Mesaj Görüldü</a></li>
           </ul>
+
+          <div class=\"detail\" style=\"display:block;background:#fff;border:none;padding:0;margin:10px 0\">
+            <h3>📜 Önsöz</h3>
+            <p>Sevgili Okur, bu kılavuz tam da “vay arkadaş hakikaten he, benim de başıma gelmişti” dedirten dertlere mizahi reçeteler sunar. Modern dünya hepimizi kutu gibi evlerde, kalabalık caddelerde kulaklıkla yalnız bıraktı. Ama işte bu kılavuz, “ulan bunu da çözdük ya” dedirten çözümlerle yalnız olmadığımızı hatırlatacak. Dertlerimizi tek başımıza değil, topluca tiye alacağız. Çünkü mizah, modern çağın en güçlü hayatta kalma yöntemidir.</p>
+          </div>
+
+          <div id=\"d-kahve\" class=\"detail\">Sabah kahvesini içmeden kimseyle konuşma; gerekirse “Lütfen kahveden sonra konuşun” kartı taşı.</div>
+          <div id=\"d-toplanti\" class=\"detail\">Toplantılar hiç bitmiyorsa ekranını dondur; donmuş surat en iyi kaçış yöntemidir.</div>
+          <div id=\"d-internet\" class=\"detail\">Modem ışığı sönünce hemen komşuya git ve “Şifre neydi?” diye sor; sosyal ilişkiler gelişir.</div>
+          <div id=\"d-diyet\" class=\"detail\">Spor salonuna yazılıp hiç gitmemek yerine, telefonunda “Spor” klasörü aç; psikolojik olarak motive edici.</div>
+          <div id=\"d-goruldu\" class=\"detail\">Cevap yazmaya üşeniyorsan emoji spamı at; karşı taraf anlam yükleyip seni düşünmekle meşgul olur.</div>
+        </section>
         </section>
 
         <section id="modern-analiz" class="section">
-          <h2>📊 Ozanlarımız Ne Dediler</h2>
-          <p>Yerel, mahalli ya da ülkemize hatta ve hatta dünyaca ünlü ozanlarımız ne dediler, işte sizin için analizlerimiz</p>
+          <h2>📊 Modern Çağ Analizleri</h2>
+          <p>Çok yakında yayında!</p>
         </section>
 
         <section id="kendilerini-ne" class="section">
           <h2>🧩 Kendilerini Ne Zannediyorlar?</h2>
-          <p>Bağıra çağıra haykıramasak da hepimizin ulan bunlar da kendilerini ne zannediyorlar dediklerimiz</p>
+          <p>Çok yakında yayında!</p>
         </section>
 
         <section id="meslek" class="section">
           <h2>💼 Meslek Deformasyonları</h2>
-          <p>Sevdiğim iş artık bir uzvum</p>
+          <p>Çok yakında yayında!</p>
         </section>
 
         <section id="hakkinda" class="section">
           <h2>ℹ️ Hakkında</h2>
           <p>Bu site mizah odaklı, <span class="blink">retro</span> bir tasarımla modern hayatın absürtlüklerine eğlenceli çözümler sunar. Web 1.0 hissi için marquee, gif ve klasik çerçeve stilleri kullanılır.</p>
-          <h3>💬 Misafir Defteri</h3>
+          <h3>💬 Misafir Defteri (Yerel)</h3>
           <form id="guestForm" style="border:2px outset #b9c7d8;padding:8px;background:#f7fbff">
             <label>İsim: <input type="text" id="guestName" required maxlength="40"></label>
             <br/>
@@ -128,7 +119,33 @@
             <button type="submit" class="btn">Gönder</button>
           </form>
           <ul id="guestList" style="list-style: none; padding-left: 0; margin-top:10px"></ul>
-          <p style="font-size:12px;color:#666">Not: Bu misafir defteri şu an tarayıcında saklanır (yerel). İstersen ileride GitHub tabanlı yorum sistemi (Giscus/Utterances) ile herkese açık hale getiririz.</p>
+          <p style="font-size:12px;color:#666">Not: Bu misafir defteri şu an tarayıcında saklanır (yerel). Yalnızca bu cihazda görünür, istersen silebilirsin.</p>
+
+          <h3>🌐 Herkese Açık Yorumlar (Üyelik ile)</h3>
+          <p style="margin-top:4px">Kullanıcı adı (görünen ad) ve e‑posta/parola ile giriş yapıp yorum bırakabilirsin. <b>Silme yetkisi yalnızca admin’dedir.</b></p>
+
+          <div id="authBox" style="border:2px outset #b9c7d8;padding:8px;background:#fff;margin-bottom:10px">
+            <div id="whenSignedOut">
+              <input type="text" id="regName" placeholder="Görünen ad" maxlength="40"/>
+              <input type="email" id="regEmail" placeholder="E‑posta"/>
+              <input type="password" id="regPass" placeholder="Parola"/>
+              <button class="btn" id="btnRegister">Kayıt Ol</button>
+              <span style="margin:0 6px">ya da</span>
+              <input type="email" id="logEmail" placeholder="E‑posta"/>
+              <input type="password" id="logPass" placeholder="Parola"/>
+              <button class="btn" id="btnLogin">Giriş Yap</button>
+            </div>
+            <div id="whenSignedIn" style="display:none">
+              Merhaba, <b id="userName"></b> — <button class="btn" id="btnLogout">Çıkış</button>
+            </div>
+          </div>
+
+          <form id="fbForm" style="border:2px outset #b9c7d8;padding:8px;background:#f7fbff;display:none">
+            <input type="text" id="fbName" placeholder="Görünen ad" maxlength="40" style="width:200px"/>
+            <input type="text" id="fbMsg" placeholder="Mesaj" required maxlength="240" style="width:60%"/>
+            <button type="submit" class="btn">Yayınla</button>
+          </form>
+          <div id="fbList" style="margin-top:10px"></div>
         </section>
       </main>
     </div>
@@ -205,6 +222,157 @@
       if(!el) return;
       el.style.display = (el.style.display==='block')? 'none':'block';
     }
+    // === Kamu Yorumları (API tabanlı) ===
+    const API_URL = 'https://YOUR_WORKER_SUBDOMAIN.workers.dev/comments'; // ← Cloudflare Worker adresinle değiştir
+    async function fetchComments(){
+      try{
+        const r = await fetch(API_URL, {headers:{'Accept':'application/json'}});
+        const data = await r.json();
+        renderComments(Array.isArray(data)?data:[]);
+      }catch(e){ console.warn('Yorumlar alınamadı', e); }
+    }
+    function renderComments(items){
+      const box = document.getElementById('publicList');
+      box.innerHTML = '';
+      if(!items.length){ box.innerHTML = '<p>Henüz yorum yok.</p>'; return; }
+      items.sort((a,b)=>b.ts-a.ts);
+      items.forEach(it=>{
+        const div = document.createElement('div');
+        div.style.border='2px inset #c9d2df';div.style.background='#f9fbfe';div.style.padding='8px';div.style.margin='8px 0';
+        const safe = s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
+        div.innerHTML = `<b>${safe(it.name)}</b>: ${safe(it.msg)} <span style="color:#999;font-size:12px">(${new Date(it.ts).toLocaleString()})</span>
+          <button class="btn" style="padding:2px 6px;float:right" data-del="${it.id}">Sil</button>`;
+        box.appendChild(div);
+      });
+    }
+    document.getElementById('publicForm').addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const name = document.getElementById('pName').value.trim();
+      const msg  = document.getElementById('pMsg').value.trim();
+      const hp   = document.getElementById('pHp').value.trim();
+      if(hp) return; // bot
+      if(!name||!msg) return;
+      try{
+        await fetch(API_URL, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name, msg})});
+        document.getElementById('pName').value=''; document.getElementById('pMsg').value='';
+        fetchComments();
+      }catch(e){ alert('Gönderilemedi'); }
+    });
+    document.getElementById('publicList').addEventListener('click', async (e)=>{
+      const id = e.target && e.target.getAttribute('data-del');
+      if(!id) return;
+      const key = prompt('Admin anahtarı:');
+      if(!key) return;
+      try{
+        await fetch(API_URL+'/'+encodeURIComponent(id), {method:'DELETE', headers:{'Authorization':'Bearer '+key}});
+        fetchComments();
+      }catch(err){ alert('Silme başarısız'); }
+    });
+    fetchComments();
+
+  </script>
+  <!-- Firebase (CDN) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script>
+    // === Firebase Config — kendi projenle değiştir ===
+    const firebaseConfig = {
+  apiKey: "AIzaSyAvswnxF_LPQvay7CUXsg_dfzdRrlE4cP0",
+  authDomain: "mizahtanvareste-9e328.firebaseapp.com",
+  projectId: "mizahtanvareste-9e328",
+  storageBucket: "mizahtanvareste-9e328.firebasestorage.app",
+  messagingSenderId: "1094184156880",
+  appId: "1:1094184156880:web:d14b5a80627ee08ebaa8d5"
+};
+    const ADMIN_UID = 'FDmTVoV1sMashImDa8hLkNWVK7k2'; // Admin olarak belirlediğin hesabın UID'i
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db   = firebase.firestore();
+
+    // UI elemanları
+    const whenIn  = document.getElementById('whenSignedIn');
+    const whenOut = document.getElementById('whenSignedOut');
+    const userName= document.getElementById('userName');
+    const fbForm  = document.getElementById('fbForm');
+    const fbName  = document.getElementById('fbName');
+    const fbMsg   = document.getElementById('fbMsg');
+    const fbList  = document.getElementById('fbList');
+
+    // Kayıt
+    document.getElementById('btnRegister')?.addEventListener('click', async ()=>{
+      const name = (document.getElementById('regName').value||'').trim();
+      const email= (document.getElementById('regEmail').value||'').trim();
+      const pass = (document.getElementById('regPass').value||'').trim();
+      if(!name||!email||!pass) return alert('Lütfen ad/e‑posta/parola girin');
+      const { user } = await auth.createUserWithEmailAndPassword(email, pass);
+      await user.updateProfile({ displayName: name });
+      alert('Kayıt başarılı, hoş geldin!');
+    });
+
+    // Giriş
+    document.getElementById('btnLogin')?.addEventListener('click', async ()=>{
+      const email= (document.getElementById('logEmail').value||'').trim();
+      const pass = (document.getElementById('logPass').value||'').trim();
+      if(!email||!pass) return alert('Lütfen e‑posta/parola girin');
+      await auth.signInWithEmailAndPassword(email, pass);
+    });
+
+    // Çıkış
+    document.getElementById('btnLogout')?.addEventListener('click', ()=> auth.signOut());
+
+    // Auth durumunu izle
+    auth.onAuthStateChanged(async (user)=>{
+      if(user){
+        whenIn.style.display='block';
+        whenOut.style.display='none';
+        userName.textContent = user.displayName || user.email;
+        fbForm.style.display='block';
+        fbName.value = user.displayName || '';
+      }else{
+        whenIn.style.display='none';
+        whenOut.style.display='block';
+        fbForm.style.display='none';
+      }
+    });
+
+    // Yorum gönder
+    fbForm?.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const user = auth.currentUser; if(!user) return alert('Lütfen giriş yapın');
+      const name = (fbName.value||user.displayName||'Misafir').toString().slice(0,40);
+      const msg  = (fbMsg.value||'').toString().slice(0,240).trim();
+      if(!msg) return;
+      await db.collection('comments').add({
+        uid: user.uid,
+        name,
+        msg,
+        ts: firebase.firestore.FieldValue.serverTimestamp()
+      });
+      fbMsg.value='';
+    });
+
+    // Listele & admin silme
+    db.collection('comments').orderBy('ts','desc').onSnapshot((snap)=>{
+      const safe = s=>String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
+      fbList.innerHTML='';
+      snap.forEach(doc=>{
+        const d = doc.data();
+        const div = document.createElement('div');
+        div.style.border='2px inset #c9d2df';div.style.background='#f9fbfe';div.style.padding='8px';div.style.margin='8px 0';
+        const dateStr = d.ts?.toDate ? d.ts.toDate().toLocaleString() : '';
+        div.innerHTML = `<b>${safe(d.name)}</b>: ${safe(d.msg)} <span style="color:#999;font-size:12px">(${dateStr})</span>`;
+        // Sadece admin'e silme butonu
+        if(auth.currentUser && auth.currentUser.uid === ADMIN_UID){
+          const btn = document.createElement('button');
+          btn.className='btn'; btn.style.padding='2px 6px'; btn.style.float='right'; btn.textContent='Sil';
+          btn.addEventListener('click', ()=> db.collection('comments').doc(doc.id).delete());
+          div.appendChild(btn);
+        }
+        fbList.appendChild(div);
+      });
+    });
   </script>
 </body>
 </html>
